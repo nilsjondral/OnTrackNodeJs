@@ -55,7 +55,7 @@ app.get('/', function(req, res) {
 // });
 
 // // 5
-// route Parameters
+// // route Parameters
 // app.get('/users/:userId/books/:bookId', function(req, res) { // http://localhost:5000/users/34/books/8989
 //   res.send(req.params); // { "userId": "34", "bookId": "8989" }
 // });
