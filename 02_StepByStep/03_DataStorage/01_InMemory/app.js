@@ -2,18 +2,17 @@ var express = require('express');
 
 var app = express();
 
-
 // // 2
 // // parse application/json 
 // var bodyParser = require('body-parser'); // Move to top
 // app.use(bodyParser.json());
-// var users = [];
 
 app.get('/', function(req, res) {
     res.send('Hello from express');
 });
 
 // // 1
+// var users = [];
 // app.get('/users', function(req, res) { // GET http://localhost:5000/users
 //     res.send(JSON.stringify(users));
 // });
