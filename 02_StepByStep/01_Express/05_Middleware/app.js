@@ -43,7 +43,7 @@ app.get('/', function(req, res) {
     res.send('Hello from express');
 });
 
-// // 3 http://localhost:5000/fail
+// // 2 http://localhost:5000/fail
 // // Error handling middleware
 // app.get('/fail', function (req, res) {
 //   app.DoSomethingSilly(); // throws error
