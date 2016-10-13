@@ -20,8 +20,6 @@ app.set('port', port);
  */
 
 var server = http.createServer(app);
-// // 3-Socket.IO
-//var server = require('../app').server;
 
 /**
  * Listen on provided port, on all network interfaces.
