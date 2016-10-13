@@ -90,5 +90,5 @@ app.use(function(err, req, res, next) {
 });
 
 // 3-Socket.IO
-// module.exports = app;
-module.exports = { app: app, server: server };
+module.exports = app;
+// module.exports = { app: app, server: server };
