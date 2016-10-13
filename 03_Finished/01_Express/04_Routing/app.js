@@ -3,9 +3,7 @@ var express = require('express');
 var app = express();
 
 // static files
-// app.use(express.static('public'));
 app.use('/static', express.static(__dirname + '/public'));
-// app.use(express.static('styles'));
 app.use('/css', express.static(__dirname + '/styles'));
 
 // .all

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Socket.IO demo</title>
+    </head>
+    <body>
+        
+        <script src="/socket.io/socket.io.js"></script> <!-- view node_modules/socket.io/node_modules/socket.io-client/ -->
+        <script>    
+            var socket = io('http://localhost:5000');
+
+            socket.on('message-from-server', function(event) {
+                document.body.appendChild(document.createTextNode(event.greeting));
+
+                socket.emit('message-from-client', {
+                    greeting: 'Hello from the client'
+                });
+            });
+        </script>
+    </body>
+</html>
