@@ -13,7 +13,7 @@ var app = express();
 // app.use('/static', express.static(__dirname + '/public'));
 // // http://localhost:5000/css/main.css
 // app.use('/css', express.static(__dirname + '/styles'));
-
+    
 app.get('/', function(req, res) {
     console.log('GET on ' + req.url);
     res.send('Hello from express');
