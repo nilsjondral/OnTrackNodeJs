@@ -1,0 +1,16 @@
+extends layout
+
+block scripts
+  script(src='./javascripts/index.js')
+
+block content
+  div(class='jumbotron')
+    div(class='container')
+      h1= 'Chatroom'
+      p= 'please choose a name'
+      div(class='row')
+        div(class='col-lg-6')
+          div(class='input-group')
+            input(type='text' placeholder='username' class='form-control' id='username')
+            span(class='input-group-btn')
+              button(class='btn btn-default' type='button' onClick='indexController.enterChatroom()')= 'Enter chatroom'
