@@ -1,0 +1,15 @@
+https://www.postgresql.org/download/
+
+psql shell
+
+// 1
+createdb node_users
+
+
+// 2
+CREATE TABLE users(
+    name VARCHAR(20),
+    age SMALLINT
+);
+
+OR pgAdmin
